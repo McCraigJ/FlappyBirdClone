@@ -28,7 +28,12 @@ public class Fish : MonoBehaviour
 
         if (transform.position.y > 6f || transform.position.y < -6f)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("MainMenu");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MainMenu");
         }
 
     }
